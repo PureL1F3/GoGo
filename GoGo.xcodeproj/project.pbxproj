@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB5BBEFD193EF7D600DF95E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5BBEFC193EF7D600DF95E6 /* Foundation.framework */; };
+		BB5BBEFF193EF7D600DF95E6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5BBEFE193EF7D600DF95E6 /* CoreGraphics.framework */; };
+		BB5BBF01193EF7D600DF95E6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5BBF00193EF7D600DF95E6 /* UIKit.framework */; };
+		BB5BBF07193EF7D600DF95E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB5BBF05193EF7D600DF95E6 /* InfoPlist.strings */; };
+		BB5BBF09193EF7D600DF95E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5BBF08193EF7D600DF95E6 /* main.m */; };
+		BB5BBF0D193EF7D600DF95E6 /* BNRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5BBF0C193EF7D600DF95E6 /* BNRAppDelegate.m */; };
+		BB5BBF0F193EF7D600DF95E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB5BBF0E193EF7D600DF95E6 /* Images.xcassets */; };
+		BB5BBF16193EF7D600DF95E6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5BBF15193EF7D600DF95E6 /* XCTest.framework */; };
+		BB5BBF17193EF7D600DF95E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5BBEFC193EF7D600DF95E6 /* Foundation.framework */; };
+		BB5BBF18193EF7D600DF95E6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5BBF00193EF7D600DF95E6 /* UIKit.framework */; };
+		BB5BBF20193EF7D600DF95E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB5BBF1E193EF7D600DF95E6 /* InfoPlist.strings */; };
+		BB5BBF22193EF7D600DF95E6 /* GoGoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5BBF21193EF7D600DF95E6 /* GoGoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB5BBF19193EF7D600DF95E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB5BBEF1193EF7D600DF95E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB5BBEF8193EF7D600DF95E6;
+			remoteInfo = GoGo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB5BBEF9193EF7D600DF95E6 /* GoGo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoGo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5BBEFC193EF7D600DF95E6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BB5BBEFE193EF7D600DF95E6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BB5BBF00193EF7D600DF95E6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BB5BBF04193EF7D600DF95E6 /* GoGo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoGo-Info.plist"; sourceTree = "<group>"; };
+		BB5BBF06193EF7D600DF95E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BB5BBF08193EF7D600DF95E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BB5BBF0A193EF7D600DF95E6 /* GoGo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GoGo-Prefix.pch"; sourceTree = "<group>"; };
+		BB5BBF0B193EF7D600DF95E6 /* BNRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BNRAppDelegate.h; sourceTree = "<group>"; };
+		BB5BBF0C193EF7D600DF95E6 /* BNRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BNRAppDelegate.m; sourceTree = "<group>"; };
+		BB5BBF0E193EF7D600DF95E6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BB5BBF14193EF7D600DF95E6 /* GoGoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoGoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB5BBF15193EF7D600DF95E6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BB5BBF1D193EF7D600DF95E6 /* GoGoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoGoTests-Info.plist"; sourceTree = "<group>"; };
+		BB5BBF1F193EF7D600DF95E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BB5BBF21193EF7D600DF95E6 /* GoGoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoGoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB5BBEF6193EF7D600DF95E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5BBEFF193EF7D600DF95E6 /* CoreGraphics.framework in Frameworks */,
+				BB5BBF01193EF7D600DF95E6 /* UIKit.framework in Frameworks */,
+				BB5BBEFD193EF7D600DF95E6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5BBF11193EF7D600DF95E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5BBF16193EF7D600DF95E6 /* XCTest.framework in Frameworks */,
+				BB5BBF18193EF7D600DF95E6 /* UIKit.framework in Frameworks */,
+				BB5BBF17193EF7D600DF95E6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB5BBEF0193EF7D600DF95E6 = {
+			isa = PBXGroup;
+			children = (
+				BB5BBF02193EF7D600DF95E6 /* GoGo */,
+				BB5BBF1B193EF7D600DF95E6 /* GoGoTests */,
+				BB5BBEFB193EF7D600DF95E6 /* Frameworks */,
+				BB5BBEFA193EF7D600DF95E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB5BBEFA193EF7D600DF95E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB5BBEF9193EF7D600DF95E6 /* GoGo.app */,
+				BB5BBF14193EF7D600DF95E6 /* GoGoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB5BBEFB193EF7D600DF95E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB5BBEFC193EF7D600DF95E6 /* Foundation.framework */,
+				BB5BBEFE193EF7D600DF95E6 /* CoreGraphics.framework */,
+				BB5BBF00193EF7D600DF95E6 /* UIKit.framework */,
+				BB5BBF15193EF7D600DF95E6 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB5BBF02193EF7D600DF95E6 /* GoGo */ = {
+			isa = PBXGroup;
+			children = (
+				BB5BBF0B193EF7D600DF95E6 /* BNRAppDelegate.h */,
+				BB5BBF0C193EF7D600DF95E6 /* BNRAppDelegate.m */,
+				BB5BBF0E193EF7D600DF95E6 /* Images.xcassets */,
+				BB5BBF03193EF7D600DF95E6 /* Supporting Files */,
+			);
+			path = GoGo;
+			sourceTree = "<group>";
+		};
+		BB5BBF03193EF7D600DF95E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB5BBF04193EF7D600DF95E6 /* GoGo-Info.plist */,
+				BB5BBF05193EF7D600DF95E6 /* InfoPlist.strings */,
+				BB5BBF08193EF7D600DF95E6 /* main.m */,
+				BB5BBF0A193EF7D600DF95E6 /* GoGo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB5BBF1B193EF7D600DF95E6 /* GoGoTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB5BBF21193EF7D600DF95E6 /* GoGoTests.m */,
+				BB5BBF1C193EF7D600DF95E6 /* Supporting Files */,
+			);
+			path = GoGoTests;
+			sourceTree = "<group>";
+		};
+		BB5BBF1C193EF7D600DF95E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB5BBF1D193EF7D600DF95E6 /* GoGoTests-Info.plist */,
+				BB5BBF1E193EF7D600DF95E6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB5BBEF8193EF7D600DF95E6 /* GoGo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5BBF25193EF7D600DF95E6 /* Build configuration list for PBXNativeTarget "GoGo" */;
+			buildPhases = (
+				BB5BBEF5193EF7D600DF95E6 /* Sources */,
+				BB5BBEF6193EF7D600DF95E6 /* Frameworks */,
+				BB5BBEF7193EF7D600DF95E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoGo;
+			productName = GoGo;
+			productReference = BB5BBEF9193EF7D600DF95E6 /* GoGo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB5BBF13193EF7D600DF95E6 /* GoGoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB5BBF28193EF7D600DF95E6 /* Build configuration list for PBXNativeTarget "GoGoTests" */;
+			buildPhases = (
+				BB5BBF10193EF7D600DF95E6 /* Sources */,
+				BB5BBF11193EF7D600DF95E6 /* Frameworks */,
+				BB5BBF12193EF7D600DF95E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB5BBF1A193EF7D600DF95E6 /* PBXTargetDependency */,
+			);
+			name = GoGoTests;
+			productName = GoGoTests;
+			productReference = BB5BBF14193EF7D600DF95E6 /* GoGoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB5BBEF1193EF7D600DF95E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BNR;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = BabyJeff;
+				TargetAttributes = {
+					BB5BBF13193EF7D600DF95E6 = {
+						TestTargetID = BB5BBEF8193EF7D600DF95E6;
+					};
+				};
+			};
+			buildConfigurationList = BB5BBEF4193EF7D600DF95E6 /* Build configuration list for PBXProject "GoGo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BB5BBEF0193EF7D600DF95E6;
+			productRefGroup = BB5BBEFA193EF7D600DF95E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB5BBEF8193EF7D600DF95E6 /* GoGo */,
+				BB5BBF13193EF7D600DF95E6 /* GoGoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB5BBEF7193EF7D600DF95E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5BBF07193EF7D600DF95E6 /* InfoPlist.strings in Resources */,
+				BB5BBF0F193EF7D600DF95E6 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5BBF12193EF7D600DF95E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5BBF20193EF7D600DF95E6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB5BBEF5193EF7D600DF95E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5BBF09193EF7D600DF95E6 /* main.m in Sources */,
+				BB5BBF0D193EF7D600DF95E6 /* BNRAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB5BBF10193EF7D600DF95E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB5BBF22193EF7D600DF95E6 /* GoGoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB5BBF1A193EF7D600DF95E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB5BBEF8193EF7D600DF95E6 /* GoGo */;
+			targetProxy = BB5BBF19193EF7D600DF95E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BB5BBF05193EF7D600DF95E6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB5BBF06193EF7D600DF95E6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BB5BBF1E193EF7D600DF95E6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB5BBF1F193EF7D600DF95E6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB5BBF23193EF7D600DF95E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BB5BBF24193EF7D600DF95E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB5BBF26193EF7D600DF95E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoGo/GoGo-Prefix.pch";
+				INFOPLIST_FILE = "GoGo/GoGo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BB5BBF27193EF7D600DF95E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoGo/GoGo-Prefix.pch";
+				INFOPLIST_FILE = "GoGo/GoGo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BB5BBF29193EF7D600DF95E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GoGo.app/GoGo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoGo/GoGo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GoGoTests/GoGoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BB5BBF2A193EF7D600DF95E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GoGo.app/GoGo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GoGo/GoGo-Prefix.pch";
+				INFOPLIST_FILE = "GoGoTests/GoGoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB5BBEF4193EF7D600DF95E6 /* Build configuration list for PBXProject "GoGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5BBF23193EF7D600DF95E6 /* Debug */,
+				BB5BBF24193EF7D600DF95E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB5BBF25193EF7D600DF95E6 /* Build configuration list for PBXNativeTarget "GoGo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5BBF26193EF7D600DF95E6 /* Debug */,
+				BB5BBF27193EF7D600DF95E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BB5BBF28193EF7D600DF95E6 /* Build configuration list for PBXNativeTarget "GoGoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB5BBF29193EF7D600DF95E6 /* Debug */,
+				BB5BBF2A193EF7D600DF95E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB5BBEF1193EF7D600DF95E6 /* Project object */;
+}
