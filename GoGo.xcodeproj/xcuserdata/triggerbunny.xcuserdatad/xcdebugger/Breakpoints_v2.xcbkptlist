@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoGo/JZXKRecordingCamViewController.m"
-            timestampString = "424159350.71617"
+            filePath = "GoGo/JZXKRecordingLoadViewController.m"
+            timestampString = "424993001.535336"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "384"
-            endingLineNumber = "384"
-            landmarkName = "-loadState"
+            startingLineNumber = "320"
+            endingLineNumber = "320"
+            landmarkName = "-onRecordVideoStatus"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -25,13 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoGo/JZXKRecordingCamViewController.m"
-            timestampString = "424159350.71617"
+            filePath = "GoGo/JZXKRecordingLoadViewController.m"
+            timestampString = "424993001.535336"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "436"
-            endingLineNumber = "436"
-            landmarkName = "-recordingDidFinishPlaying:"
+            startingLineNumber = "319"
+            endingLineNumber = "319"
+            landmarkName = "-onRecordVideoStatus"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -41,45 +41,123 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoGo/JZXKRecordingCamViewController.m"
-            timestampString = "424146370.403814"
+            filePath = "GoGo/JZXKRecordingLoadViewController.m"
+            timestampString = "424993001.535336"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "103"
-            endingLineNumber = "103"
-            landmarkName = "-setupTopPlaybackPlayer"
+            startingLineNumber = "321"
+            endingLineNumber = "321"
+            landmarkName = "-onRecordVideoStatus"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoGo/JZXKRecordingCamViewController.m"
-            timestampString = "424146370.403814"
+            filePath = "GoGo/JZXKRecordingLoadViewController.m"
+            timestampString = "424993001.535336"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
-            landmarkName = "-setupBottomPlayback"
+            startingLineNumber = "311"
+            endingLineNumber = "311"
+            landmarkName = "-onRecordVideoStatus"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "GoGo/JZXKRecordingCamViewController.m"
-            timestampString = "424159350.71617"
+            filePath = "GoGo/JZXKRecordingLoadViewController.m"
+            timestampString = "424993001.535336"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "478"
-            endingLineNumber = "478"
-            landmarkName = "-observeValueForKeyPath:ofObject:change:context:"
+            startingLineNumber = "312"
+            endingLineNumber = "312"
+            landmarkName = "-onRecordVideoStatus"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GoGo/JZXKRecordingLoadViewController.m"
+            timestampString = "424993001.535336"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "346"
+            endingLineNumber = "346"
+            landmarkName = "-onRecordVideoStatus"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__54-[JZXKRecordingLoadViewController onRecordVideoStatus]_block_invoke"
+                  moduleName = "GoGo"
+                  urlString = "file:///Users/triggerbunny/Documents/GoGo/GoGo/JZXKRecordingLoadViewController.m"
+                  timestampString = "424992847.89204"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "345"
+                  endingLineNumber = "345"
+                  offsetFromSymbolStart = "1344">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__54-[JZXKRecordingLoadViewController onRecordVideoStatus]_block_invoke"
+                  moduleName = "GoGo"
+                  urlString = "file:///Users/triggerbunny/Documents/GoGo/GoGo/JZXKRecordingLoadViewController.m"
+                  timestampString = "424992847.892277"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "345"
+                  endingLineNumber = "345"
+                  offsetFromSymbolStart = "1516">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GoGo/JZXKRecordingLoadViewController.m"
+            timestampString = "424993001.535336"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "324"
+            endingLineNumber = "324"
+            landmarkName = "-onRecordVideoStatus"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GoGo/JZXKRecordingLoadViewController.m"
+            timestampString = "424993001.535336"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "326"
+            endingLineNumber = "326"
+            landmarkName = "-onRecordVideoStatus"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

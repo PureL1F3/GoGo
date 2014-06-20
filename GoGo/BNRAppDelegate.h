@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TOOTVidblit.h"
 @interface BNRAppDelegate : UIResponder <UIApplicationDelegate>
 
+@property (nonatomic) TOOTVidblit *vidlit;
 @property (strong, nonatomic) UIWindow *window;
 
 @end

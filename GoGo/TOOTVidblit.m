@@ -37,10 +37,15 @@
                       @"playlist" : @"/playlist.m3u8"};
 }
 
--(NSURL *)requestURLForService:(NSString *)service
+-(NSString *)requestURLStringForService:(NSString *)service
 {
     NSString *urlString = [NSString stringWithFormat:@"%@%@", self.hostname, self.services[service]];
-    NSURL *url = [[NSURL alloc] initWithString:urlString];
+    return urlString;
+}
+
+-(NSURL *)requestURLForURLString:(NSString *)urlString
+{
+    NSURL *url = [[NSURL alloc] initWithString:[urlString stringByAddingPercentEncodingWithAllowedCharacters:NSCharacterSet.URLQueryAllowedCharacterSet]];
     return url;
 }
 
@@ -65,7 +70,7 @@
 -(NSMutableURLRequest *)requestForRegisterWithUsername:(NSString *) user email:(NSString *)email password:(NSString *)pwd
 {
     NSLog(@"TOOTVidblit:requestForRegisterWithUsername(u=%@,e=%@,p=%@)", user, email, pwd);
-    NSURL *url = [self requestURLForService:@"register"];
+    NSURL *url = [self requestURLForURLString:[self requestURLStringForService:@"register"]];
     NSString *paramString = [NSString stringWithFormat:@"user=%@&email=%@&pwd=%@", user, email, pwd];
     NSData *body = [paramString dataUsingEncoding:NSUTF8StringEncoding];
     NSMutableDictionary *headers = @{@"application/x-www-form-urlencoded": @"content-type"};
@@ -86,7 +91,7 @@
 {
     NSLog(@"TOOTVidblit:requestForLogout");
 
-    NSURL *url = [[NSURL alloc] initWithString:[self requestURLForService:@"logout"]];
+    NSURL *url = [self requestURLForURLString:[self requestURLStringForService:@"logout"]];
     NSString *token = @"";
     NSMutableDictionary *headers = @{
                             @"application/x-www-form-urlencoded": @"content-type",
@@ -98,7 +103,7 @@
 -(NSMutableURLRequest *)requestForUserVideoUrl:(NSString *)vURL
 {
     NSLog(@"TOOTVidblit:requestForUserVideoUrl(u=%@)", vURL);
-    NSURL *url = [[NSURL alloc] initWithString:[self requestURLForService:@"request_create"]];
+    NSURL *url = [self requestURLForURLString:[self requestURLStringForService:@"request_create"]];
     NSString *paramString = [NSString stringWithFormat:@"url=%@", vURL];
     NSData *body = [paramString dataUsingEncoding:NSUTF8StringEncoding];
     NSMutableDictionary *headers = @{@"application/x-www-form-urlencoded": @"content-type",
@@ -109,18 +114,17 @@
 -(NSMutableURLRequest *)requestForUserVideoStatus:(NSString *)rID
 {
     NSLog(@"TOOTVidblit:requestForUserVideoStatus(i=%@)", rID);
-    NSURL *url = [[NSURL alloc] initWithString:[self requestURLForService:@"request_create"]];
-    NSString *paramString = [NSString stringWithFormat:@"id=%@", rID];
-    NSData *body = [paramString dataUsingEncoding:NSUTF8StringEncoding];
-    NSMutableDictionary *headers = @{@"application/x-www-form-urlencoded": @"content-type",
-                                     @"X-Description": [self userToken]};
-    return [self requestWithURL:url body:body headers:headers method:@"GET"];
+    NSString *rawURLString = [NSString stringWithFormat:@"%@?id=%@", [self requestURLStringForService:@"request_status"], rID];
+    NSURL *url = [self requestURLForURLString:rawURLString];
+    NSMutableDictionary *headers = @{@"X-Description": [self userToken]};
+    return [self requestWithURL:url body:nil headers:headers method:@"GET"];
 }
 
 -(NSMutableURLRequest *)requestForVideoPlaylist:(NSString *)rID
 {
     NSLog(@"TOOTVidblit:requestForVideoPlaylist(i=%@)", rID);
-    NSURL *url = [[NSURL alloc] initWithString:[self requestURLForService:@"request_create"]];
+    NSString *rawURLString = [NSString stringWithFormat:@"%@?id=%@&t=%@", [self requestURLStringForService:@"playlist"], rID, [self userToken]];
+    NSURL *url = [self requestURLForURLString:rawURLString];
     NSString *paramString = [NSString stringWithFormat:@"id=%@&t=%@", rID, [self userToken]];
     NSData *body = [paramString dataUsingEncoding:NSUTF8StringEncoding];
     NSMutableDictionary *headers = @{@"application/x-www-form-urlencoded": @"content-type"};

@@ -26,11 +26,14 @@
         self.edgesForExtendedLayout = UIRectEdgeNone;
         
         MAX_STATUS_REQUESTS = 15;
-        STATUS_REQUEST_DELAY = 3.0;
+        STATUS_REQUEST_DELAY = 0.5;
         background_request_queue = dispatch_queue_create("com.vidblit.cock.block", NULL);
 
         self.userID = @"0";
-
+        
+        
+        //anna today
+        self.vidlit = [[TOOTVidblit alloc] init];
     }
     return self;
 }
@@ -45,7 +48,6 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [self hideErrorForRequest];
     self.activityIndicator.hidden = true;
 }
 
@@ -237,8 +239,124 @@
     {
         NSLog(@"We got nothing so trying to get another request status!");
         [self getRequestStatus];
+        
     }
 }
 
 
+
+-(void)setEnabledEntry:(BOOL) enabled
+{
+    self.recordBTN.enabled = enabled;
+    self.urlTextField.enabled = enabled;
+}
+
+-(IBAction)onRecordVideo:(id)sender
+{
+    NSLog(@"JZXKRecordingLoadViewController:onRecordVideo");
+    [self setEnabledEntry:FALSE];
+    statusRequestCount = 0;
+    self.errorLabel.text = @"";
+    self.url = self.urlTextField.text;
+    
+    NSMutableURLRequest *request = [self.vidlit requestForUserVideoUrl:self.url];
+    NSURLSession *session = [NSURLSession sharedSession];
+    [[session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if(error)
+        {
+            NSLog(@"onRecordVideorequest Error: %@", error);
+            [self showRecordVideoErrorOnMainThread:@"Please check network is available"];
+            return;
+        }
+        
+        NSLog(@"onRecordVideo request Success");
+        NSString *body = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
+        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+        BOOL ok = [[json valueForKey:@"ok"] boolValue];
+        if(!ok)
+        {
+            NSLog(@"Create failed");
+            [self showRecordVideoErrorOnMainThread:[json valueForKey:@"result"]];
+        }
+        else
+        {
+            NSLog(@"Create success");
+            
+            self.urlRequestID = [[json valueForKey:@"result"] valueForKey:@"id"];
+            dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, STATUS_REQUEST_DELAY * NSEC_PER_SEC);
+            dispatch_after(popTime, background_request_queue, ^(void){
+                [self onRecordVideoStatus];
+            });
+        }
+    }] resume];
+    
+}
+
+-(void)onRecordVideoStatus
+{
+    NSLog(@"JZXKRecordingLoadViewController:onRecordVideoStatus");
+    NSMutableURLRequest *request = [self.vidlit requestForUserVideoStatus:self.urlRequestID];
+    NSURLSession *session = [NSURLSession sharedSession];
+    [[session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if(error)
+        {
+            NSLog(@"onRecordVideoStatus Error: %@", error);
+            [self showRecordVideoErrorOnMainThread:@"Please check network is available"];
+            return;
+        }
+        
+        NSLog(@"onRecordVideoStatus request Success");
+        NSString *body = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
+        NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+        
+        BOOL ok = [[json valueForKey:@"ok"] boolValue];
+        if(!ok)
+        {
+            NSLog(@"Status failed");
+            [self showRecordVideoErrorOnMainThread:[json valueForKey:@"result"]];
+            return;
+        }
+        else
+        {
+            NSLog(@"Status success");
+            NSDictionary *result = [json valueForKey:@"result"];
+            
+            BOOL available = [[result valueForKey:@"available"] boolValue];
+            NSLog(@"Status available: %d", available);
+            if(!available)
+            {
+                NSString *error = [result valueForKey:@"error"];
+                if(error != (id)[NSNull null])
+                {
+                    [self showRecordVideoErrorOnMainThread:[json valueForKey:error]];
+                    return;
+                }
+                if (statusRequestCount < MAX_STATUS_REQUESTS) {
+                    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, STATUS_REQUEST_DELAY * NSEC_PER_SEC);
+                    dispatch_after(popTime, background_request_queue, ^(void){
+                        [self onRecordVideoStatus];
+                    });
+                }
+                else{
+                    [self showRecordVideoErrorOnMainThread:@"Sorry we could not load that video"];
+                }
+
+            }
+            else
+            {
+                [self showRecordVideoErrorOnMainThread:@"video available"];
+            }
+        }
+        
+    }] resume];
+    statusRequestCount++;
+}
+                           
+-(void)showRecordVideoErrorOnMainThread:(NSString *)error
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.errorLabel.text = error;
+        [self setEnabledEntry:TRUE];
+    });
+}
 @end

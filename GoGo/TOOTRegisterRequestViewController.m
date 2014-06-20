@@ -7,7 +7,7 @@
 //
 
 #import "TOOTRegisterRequestViewController.h"
-
+#import "JZXKRecordingLoadViewController.h"
 
 @interface TOOTRegisterRequestViewController ()
 
@@ -21,20 +21,22 @@
     if (self) {
         self.edgesForExtendedLayout = UIRectEdgeNone;
         self.vidlit = [[TOOTVidblit alloc] init];
-        waitingOnResult = FALSE;
     }
     return self;
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self.navigationController setNavigationBarHidden:YES];
+}
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [self.navigationController setNavigationBarHidden:NO];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    //add nav bar back button and title to nav bar
-    [self.navigationItem setTitle:@"Register"];
-    UIBarButtonItem *backButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(navigateBack:)];
-    [self.navigationItem setLeftBarButtonItem:backButtonItem];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,12 +47,7 @@
 
 - (IBAction)registerUser:(id)sender {
     NSLog(@"TOOTRegisterRequestViewController:registerUser");
-    if(waitingOnResult)
-    {
-        return;
-    }
-    
-    waitingOnResult = TRUE;
+    [self setEnabledEntry:FALSE];
     self.username = self.userTF.text;
     self.password = self.pwdTF.text;
     self.email = self.emailTF.text;
@@ -62,19 +59,18 @@
         if(error)
         {
             NSLog(@"Session Request Error: %@", error);
-            waitingOnResult = FALSE;
+            [self showRegistrationErrorOnMainThread:@"Please check network is available"];
             return;
         }
 
         NSLog(@"Session Request Success");
         NSString *body = [[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding];
         NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-        
         BOOL ok = [[json valueForKey:@"ok"] boolValue];
         if(!ok)
         {
             NSLog(@"Registration failed");
-            self.resultTV.text = [json valueForKey:@"result"];
+            [self showRegistrationErrorOnMainThread:(NSString *)[json valueForKey:@"result"]];
         }
         else
         {
@@ -87,12 +83,26 @@
             BOOL tokenResult = [self.vidlit saveToken: token];
             
             dispatch_async(dispatch_get_main_queue(), ^{
-                self.resultTV.text = [NSString stringWithFormat:@"Result:\n%@", body];
+                [self.navigationController pushViewController:[[JZXKRecordingLoadViewController alloc] init] animated:YES];
             });
         }
-        
-        waitingOnResult = FALSE;
     }] resume];
+}
+
+-(void)setEnabledEntry:(BOOL) enabled
+{
+    self.userTF.enabled = enabled;
+    self.emailTF.enabled = enabled;
+    self.pwdTF.enabled = enabled;
+    self.registerBTN.enabled = enabled;
+}
+
+-(void)showRegistrationErrorOnMainThread:(NSString *)error
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.resultTV.text = error;
+        [self setEnabledEntry:TRUE];
+    });
 }
 
 -(void)navigateBack:(id)sender {

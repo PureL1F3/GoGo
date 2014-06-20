@@ -39,6 +39,9 @@
 		BB5BBF631940EBA000DF95E6 /* JZXKRecordingCamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5BBF621940EBA000DF95E6 /* JZXKRecordingCamViewController.m */; };
 		BB5BBFA61946510400DF95E6 /* JZXKVidblit.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5BBFA51946510400DF95E6 /* JZXKVidblit.m */; };
 		BB5BBFA8194699D300DF95E6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5BBFA7194699D300DF95E6 /* AVFoundation.framework */; };
+		BBA6C3F61954BD150079E517 /* TOOTRegisterRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA6C3F11954BD150079E517 /* TOOTRegisterRequestViewController.m */; };
+		BBA6C3F71954BD150079E517 /* TOOTVidblit.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA6C3F21954BD150079E517 /* TOOTVidblit.m */; };
+		BBA6C3F81954BD150079E517 /* TOOTRegisterRequestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBA6C3F51954BD150079E517 /* TOOTRegisterRequestViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +100,11 @@
 		BB5BBFA41946510400DF95E6 /* JZXKVidblit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZXKVidblit.h; sourceTree = "<group>"; };
 		BB5BBFA51946510400DF95E6 /* JZXKVidblit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZXKVidblit.m; sourceTree = "<group>"; };
 		BB5BBFA7194699D300DF95E6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BBA6C3F11954BD150079E517 /* TOOTRegisterRequestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOOTRegisterRequestViewController.m; sourceTree = "<group>"; };
+		BBA6C3F21954BD150079E517 /* TOOTVidblit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOOTVidblit.m; sourceTree = "<group>"; };
+		BBA6C3F31954BD150079E517 /* TOOTVidblit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOOTVidblit.h; sourceTree = "<group>"; };
+		BBA6C3F41954BD150079E517 /* TOOTRegisterRequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOOTRegisterRequestViewController.h; sourceTree = "<group>"; };
+		BBA6C3F51954BD150079E517 /* TOOTRegisterRequestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TOOTRegisterRequestViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +166,9 @@
 		BB5BBF02193EF7D600DF95E6 /* GoGo */ = {
 			isa = PBXGroup;
 			children = (
+				BBA6C3F91954BD220079E517 /* Registration */,
+				BBA6C3F21954BD150079E517 /* TOOTVidblit.m */,
+				BBA6C3F31954BD150079E517 /* TOOTVidblit.h */,
 				BB5BBF571940E79D00DF95E6 /* Recording */,
 				BB5BBF41193FCC0900DF95E6 /* profilepic.jpg */,
 				BB5BBF30193F9C7400DF95E6 /* response.jpg */,
@@ -287,6 +298,16 @@
 			name = "Record Video Screen";
 			sourceTree = "<group>";
 		};
+		BBA6C3F91954BD220079E517 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				BBA6C3F11954BD150079E517 /* TOOTRegisterRequestViewController.m */,
+				BBA6C3F41954BD150079E517 /* TOOTRegisterRequestViewController.h */,
+				BBA6C3F51954BD150079E517 /* TOOTRegisterRequestViewController.xib */,
+			);
+			name = Registration;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -367,6 +388,7 @@
 				BB5BBF44193FD5CF00DF95E6 /* chrisbrown webcam .jpg in Resources */,
 				BB5BBF07193EF7D600DF95E6 /* InfoPlist.strings in Resources */,
 				BB5BBF4D19401AD000DF95E6 /* TestViewCell.xib in Resources */,
+				BBA6C3F81954BD150079E517 /* TOOTRegisterRequestViewController.xib in Resources */,
 				BB5BBF42193FCC0900DF95E6 /* profilepic.jpg in Resources */,
 				BB5BBF32193F9C7400DF95E6 /* response.jpg in Resources */,
 				BB5BBF33193F9C7400DF95E6 /* video.jpg in Resources */,
@@ -398,10 +420,12 @@
 				BB5BBF5A1940E7B900DF95E6 /* JZXKRecordingLoadViewController.m in Sources */,
 				BB5BBF09193EF7D600DF95E6 /* main.m in Sources */,
 				BB5BBF4B194010AE00DF95E6 /* JZXKVideoSearchResultTableViewCell.m in Sources */,
+				BBA6C3F71954BD150079E517 /* TOOTVidblit.m in Sources */,
 				BB5BBF5019401DC900DF95E6 /* TestViewCell.m in Sources */,
 				BB5BBF631940EBA000DF95E6 /* JZXKRecordingCamViewController.m in Sources */,
 				BB5BBFA61946510400DF95E6 /* JZXKVidblit.m in Sources */,
 				BB5BBF0D193EF7D600DF95E6 /* BNRAppDelegate.m in Sources */,
+				BBA6C3F61954BD150079E517 /* TOOTRegisterRequestViewController.m in Sources */,
 				BB5BBF3D193FC90000DF95E6 /* JZXKVideoPlayerView.m in Sources */,
 				BB5BBF48193FFFE800DF95E6 /* JZXKVideoSearchViewController.m in Sources */,
 			);
@@ -600,6 +624,7 @@
 				BB5BBF27193EF7D600DF95E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB5BBF28193EF7D600DF95E6 /* Build configuration list for PBXNativeTarget "GoGoTests" */ = {
 			isa = XCConfigurationList;
@@ -608,6 +633,7 @@
 				BB5BBF2A193EF7D600DF95E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

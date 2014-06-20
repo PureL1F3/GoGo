@@ -10,9 +10,6 @@
 #import "TOOTVidblit.h"
 
 @interface TOOTRegisterRequestViewController : UIViewController
-{
-    BOOL waitingOnResult;
-}
 
 @property (nonatomic) TOOTVidblit *vidlit;
 
@@ -20,6 +17,9 @@
 @property (nonatomic) NSString *password;
 @property (nonatomic) NSString *email;
 
+
+
+@property (weak, nonatomic) IBOutlet UIButton *registerBTN;
 @property (weak, nonatomic) IBOutlet UITextField *userTF;
 @property (weak, nonatomic) IBOutlet UITextField *pwdTF;
 @property (weak, nonatomic) IBOutlet UITextField *emailTF;

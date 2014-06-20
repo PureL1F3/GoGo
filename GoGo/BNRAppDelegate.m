@@ -10,25 +10,32 @@
 #import "BNRVideoPlayerViewController.h"
 #import "JZXKVideoSearchViewController.h"
 #import "JZXKRecordingLoadViewController.h"
+#import "TOOTRegisterRequestViewController.h"
 
 @implementation BNRAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    
-    //BNRVideoPlayerViewController *vc = [[BNRVideoPlayerViewController alloc] init];
-  
-    JZXKRecordingLoadViewController *vc = [[JZXKRecordingLoadViewController alloc] init];
-//    JZXKVideoSearchViewController *vc = [[JZXKVideoSearchViewController alloc] init];
-    
+    self.vidlit = [[TOOTVidblit alloc] init];
     
     //this removes the dimming when recording
     [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
     
-    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
+    //for testig
+    //[self.vidlit deleteKeychainValue:TOOTKeychainToken];
     
+    UIViewController *vc = nil;
+    if(![self.vidlit getKeychainValue:TOOTKeychainToken])
+    {
+        vc = [[TOOTRegisterRequestViewController alloc] init];
+    }
+    else
+    {
+        vc = [[JZXKRecordingLoadViewController alloc] init];
+    }
+    
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nvc;
     
     self.window.backgroundColor = [UIColor whiteColor];

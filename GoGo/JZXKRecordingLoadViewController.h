@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "TOOTVidblit.h"
 @interface JZXKRecordingLoadViewController : UIViewController <NSURLSessionDelegate, NSURLSessionTaskDelegate>
 {
     int MAX_STATUS_REQUESTS;
@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *urlTextField;
 @property (weak, nonatomic) IBOutlet UILabel *errorLabel;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (weak, nonatomic) IBOutlet UIButton *recordBTN;
 
 @property (nonatomic) NSString *userID;
 @property (nonatomic) NSString *requestID;
@@ -32,5 +33,12 @@
 @property (nonatomic) NSURLSessionDataTask *requestTask;
 
 - (IBAction)recordVideo:(id)sender;
+
+
+
+-(IBAction)onRecordVideo:(id)sender;
+@property (nonatomic) TOOTVidblit *vidlit;
+@property (nonatomic) NSString *urlRequestID;
+@property (nonatomic) NSString *url;
 
 @end
