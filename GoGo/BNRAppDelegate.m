@@ -7,6 +7,9 @@
 //
 
 #import "BNRAppDelegate.h"
+#import "BNRVideoPlayerViewController.h"
+#import "JZXKVideoSearchViewController.h"
+#import "JZXKRecordingLoadViewController.h"
 
 @implementation BNRAppDelegate
 
@@ -14,6 +17,20 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    //BNRVideoPlayerViewController *vc = [[BNRVideoPlayerViewController alloc] init];
+  
+    JZXKRecordingLoadViewController *vc = [[JZXKRecordingLoadViewController alloc] init];
+//    JZXKVideoSearchViewController *vc = [[JZXKVideoSearchViewController alloc] init];
+    
+    
+    //this removes the dimming when recording
+    [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
+    
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:vc];
+    
+    self.window.rootViewController = nvc;
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

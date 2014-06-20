@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "JZXKVideoPlayerView.h"
 
 @interface JZXKVideoSearchResultTableViewCell : UITableViewCell
-
+@property (nonatomic, strong) JZXKVideoPlayerView *customView;
 @end

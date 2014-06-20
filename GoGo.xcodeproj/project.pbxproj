@@ -19,6 +19,26 @@
 		BB5BBF18193EF7D600DF95E6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5BBF00193EF7D600DF95E6 /* UIKit.framework */; };
 		BB5BBF20193EF7D600DF95E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BB5BBF1E193EF7D600DF95E6 /* InfoPlist.strings */; };
 		BB5BBF22193EF7D600DF95E6 /* GoGoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5BBF21193EF7D600DF95E6 /* GoGoTests.m */; };
+		BB5BBF2D193EF80000DF95E6 /* BNRVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5BBF2C193EF80000DF95E6 /* BNRVideoPlayerViewController.m */; };
+		BB5BBF2F193EF81200DF95E6 /* BNRVideoPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5BBF2E193EF81200DF95E6 /* BNRVideoPlayerViewController.xib */; };
+		BB5BBF32193F9C7400DF95E6 /* response.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BB5BBF30193F9C7400DF95E6 /* response.jpg */; };
+		BB5BBF33193F9C7400DF95E6 /* video.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BB5BBF31193F9C7400DF95E6 /* video.jpg */; };
+		BB5BBF36193FA4FA00DF95E6 /* JZXKMainVideoAdvertView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5BBF35193FA4FA00DF95E6 /* JZXKMainVideoAdvertView.m */; };
+		BB5BBF38193FA52200DF95E6 /* JZXKMainVideoAdvertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5BBF37193FA52200DF95E6 /* JZXKMainVideoAdvertView.xib */; };
+		BB5BBF3A193FB27600DF95E6 /* JZXKVideoPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5BBF39193FB27500DF95E6 /* JZXKVideoPlayerView.xib */; };
+		BB5BBF3D193FC90000DF95E6 /* JZXKVideoPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5BBF3C193FC90000DF95E6 /* JZXKVideoPlayerView.m */; };
+		BB5BBF42193FCC0900DF95E6 /* profilepic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BB5BBF41193FCC0900DF95E6 /* profilepic.jpg */; };
+		BB5BBF44193FD5CF00DF95E6 /* chrisbrown webcam .jpg in Resources */ = {isa = PBXBuildFile; fileRef = BB5BBF43193FD5CF00DF95E6 /* chrisbrown webcam .jpg */; };
+		BB5BBF48193FFFE800DF95E6 /* JZXKVideoSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5BBF47193FFFE800DF95E6 /* JZXKVideoSearchViewController.m */; };
+		BB5BBF4B194010AE00DF95E6 /* JZXKVideoSearchResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5BBF4A194010AE00DF95E6 /* JZXKVideoSearchResultTableViewCell.m */; };
+		BB5BBF4D19401AD000DF95E6 /* TestViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5BBF4C19401AD000DF95E6 /* TestViewCell.xib */; };
+		BB5BBF5019401DC900DF95E6 /* TestViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5BBF4F19401DC900DF95E6 /* TestViewCell.m */; };
+		BB5BBF531940D76400DF95E6 /* JZXKRecordingLoadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5BBF521940D76400DF95E6 /* JZXKRecordingLoadViewController.xib */; };
+		BB5BBF551940DBCC00DF95E6 /* JZXKRecordingCamViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB5BBF541940DBCC00DF95E6 /* JZXKRecordingCamViewController.xib */; };
+		BB5BBF5A1940E7B900DF95E6 /* JZXKRecordingLoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5BBF591940E7B900DF95E6 /* JZXKRecordingLoadViewController.m */; };
+		BB5BBF631940EBA000DF95E6 /* JZXKRecordingCamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5BBF621940EBA000DF95E6 /* JZXKRecordingCamViewController.m */; };
+		BB5BBFA61946510400DF95E6 /* JZXKVidblit.m in Sources */ = {isa = PBXBuildFile; fileRef = BB5BBFA51946510400DF95E6 /* JZXKVidblit.m */; };
+		BB5BBFA8194699D300DF95E6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5BBFA7194699D300DF95E6 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +68,35 @@
 		BB5BBF1D193EF7D600DF95E6 /* GoGoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoGoTests-Info.plist"; sourceTree = "<group>"; };
 		BB5BBF1F193EF7D600DF95E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BB5BBF21193EF7D600DF95E6 /* GoGoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoGoTests.m; sourceTree = "<group>"; };
+		BB5BBF2B193EF80000DF95E6 /* BNRVideoPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNRVideoPlayerViewController.h; sourceTree = "<group>"; };
+		BB5BBF2C193EF80000DF95E6 /* BNRVideoPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNRVideoPlayerViewController.m; sourceTree = "<group>"; };
+		BB5BBF2E193EF81200DF95E6 /* BNRVideoPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BNRVideoPlayerViewController.xib; sourceTree = "<group>"; };
+		BB5BBF30193F9C7400DF95E6 /* response.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = response.jpg; sourceTree = "<group>"; };
+		BB5BBF31193F9C7400DF95E6 /* video.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = video.jpg; sourceTree = "<group>"; };
+		BB5BBF34193FA4FA00DF95E6 /* JZXKMainVideoAdvertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZXKMainVideoAdvertView.h; sourceTree = "<group>"; };
+		BB5BBF35193FA4FA00DF95E6 /* JZXKMainVideoAdvertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZXKMainVideoAdvertView.m; sourceTree = "<group>"; };
+		BB5BBF37193FA52200DF95E6 /* JZXKMainVideoAdvertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JZXKMainVideoAdvertView.xib; sourceTree = "<group>"; };
+		BB5BBF39193FB27500DF95E6 /* JZXKVideoPlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JZXKVideoPlayerView.xib; sourceTree = "<group>"; };
+		BB5BBF3B193FC90000DF95E6 /* JZXKVideoPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZXKVideoPlayerView.h; sourceTree = "<group>"; };
+		BB5BBF3C193FC90000DF95E6 /* JZXKVideoPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZXKVideoPlayerView.m; sourceTree = "<group>"; };
+		BB5BBF41193FCC0900DF95E6 /* profilepic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profilepic.jpg; sourceTree = "<group>"; };
+		BB5BBF43193FD5CF00DF95E6 /* chrisbrown webcam .jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "chrisbrown webcam .jpg"; sourceTree = "<group>"; };
+		BB5BBF46193FFFE800DF95E6 /* JZXKVideoSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZXKVideoSearchViewController.h; sourceTree = "<group>"; };
+		BB5BBF47193FFFE800DF95E6 /* JZXKVideoSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZXKVideoSearchViewController.m; sourceTree = "<group>"; };
+		BB5BBF49194010AE00DF95E6 /* JZXKVideoSearchResultTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZXKVideoSearchResultTableViewCell.h; sourceTree = "<group>"; };
+		BB5BBF4A194010AE00DF95E6 /* JZXKVideoSearchResultTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZXKVideoSearchResultTableViewCell.m; sourceTree = "<group>"; };
+		BB5BBF4C19401AD000DF95E6 /* TestViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewCell.xib; sourceTree = "<group>"; };
+		BB5BBF4E19401DC900DF95E6 /* TestViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewCell.h; sourceTree = "<group>"; };
+		BB5BBF4F19401DC900DF95E6 /* TestViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewCell.m; sourceTree = "<group>"; };
+		BB5BBF521940D76400DF95E6 /* JZXKRecordingLoadViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JZXKRecordingLoadViewController.xib; path = ../JZXKRecordingLoadViewController.xib; sourceTree = "<group>"; };
+		BB5BBF541940DBCC00DF95E6 /* JZXKRecordingCamViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JZXKRecordingCamViewController.xib; sourceTree = "<group>"; };
+		BB5BBF581940E7B900DF95E6 /* JZXKRecordingLoadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZXKRecordingLoadViewController.h; sourceTree = "<group>"; };
+		BB5BBF591940E7B900DF95E6 /* JZXKRecordingLoadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZXKRecordingLoadViewController.m; sourceTree = "<group>"; };
+		BB5BBF611940EBA000DF95E6 /* JZXKRecordingCamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZXKRecordingCamViewController.h; sourceTree = "<group>"; };
+		BB5BBF621940EBA000DF95E6 /* JZXKRecordingCamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZXKRecordingCamViewController.m; sourceTree = "<group>"; };
+		BB5BBFA41946510400DF95E6 /* JZXKVidblit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZXKVidblit.h; sourceTree = "<group>"; };
+		BB5BBFA51946510400DF95E6 /* JZXKVidblit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZXKVidblit.m; sourceTree = "<group>"; };
+		BB5BBFA7194699D300DF95E6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB5BBFA8194699D300DF95E6 /* AVFoundation.framework in Frameworks */,
 				BB5BBEFF193EF7D600DF95E6 /* CoreGraphics.framework in Frameworks */,
 				BB5BBF01193EF7D600DF95E6 /* UIKit.framework in Frameworks */,
 				BB5BBEFD193EF7D600DF95E6 /* Foundation.framework in Frameworks */,
@@ -96,6 +146,7 @@
 		BB5BBEFB193EF7D600DF95E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BB5BBFA7194699D300DF95E6 /* AVFoundation.framework */,
 				BB5BBEFC193EF7D600DF95E6 /* Foundation.framework */,
 				BB5BBEFE193EF7D600DF95E6 /* CoreGraphics.framework */,
 				BB5BBF00193EF7D600DF95E6 /* UIKit.framework */,
@@ -107,10 +158,18 @@
 		BB5BBF02193EF7D600DF95E6 /* GoGo */ = {
 			isa = PBXGroup;
 			children = (
+				BB5BBF571940E79D00DF95E6 /* Recording */,
+				BB5BBF41193FCC0900DF95E6 /* profilepic.jpg */,
+				BB5BBF30193F9C7400DF95E6 /* response.jpg */,
+				BB5BBF31193F9C7400DF95E6 /* video.jpg */,
 				BB5BBF0B193EF7D600DF95E6 /* BNRAppDelegate.h */,
+				BB5BBF43193FD5CF00DF95E6 /* chrisbrown webcam .jpg */,
 				BB5BBF0C193EF7D600DF95E6 /* BNRAppDelegate.m */,
 				BB5BBF0E193EF7D600DF95E6 /* Images.xcassets */,
+				BB5BBF40193FC93400DF95E6 /* Screens */,
 				BB5BBF03193EF7D600DF95E6 /* Supporting Files */,
+				BB5BBFA41946510400DF95E6 /* JZXKVidblit.h */,
+				BB5BBFA51946510400DF95E6 /* JZXKVidblit.m */,
 			);
 			path = GoGo;
 			sourceTree = "<group>";
@@ -142,6 +201,90 @@
 				BB5BBF1E193EF7D600DF95E6 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB5BBF3E193FC91700DF95E6 /* OLD_JZXKVideoPlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				BB5BBF39193FB27500DF95E6 /* JZXKVideoPlayerView.xib */,
+				BB5BBF3B193FC90000DF95E6 /* JZXKVideoPlayerView.h */,
+				BB5BBF3C193FC90000DF95E6 /* JZXKVideoPlayerView.m */,
+			);
+			name = OLD_JZXKVideoPlayerView;
+			sourceTree = "<group>";
+		};
+		BB5BBF3F193FC92100DF95E6 /* OLD_ JZXKMainVideoAdvertView */ = {
+			isa = PBXGroup;
+			children = (
+				BB5BBF34193FA4FA00DF95E6 /* JZXKMainVideoAdvertView.h */,
+				BB5BBF35193FA4FA00DF95E6 /* JZXKMainVideoAdvertView.m */,
+				BB5BBF37193FA52200DF95E6 /* JZXKMainVideoAdvertView.xib */,
+			);
+			name = "OLD_ JZXKMainVideoAdvertView";
+			sourceTree = "<group>";
+		};
+		BB5BBF40193FC93400DF95E6 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BB5BBF45193FFFB100DF95E6 /* JZXKVideoSearchViewController */,
+				BB5BBF511940D71700DF95E6 /* OLD */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		BB5BBF45193FFFB100DF95E6 /* JZXKVideoSearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BB5BBF4C19401AD000DF95E6 /* TestViewCell.xib */,
+				BB5BBF4E19401DC900DF95E6 /* TestViewCell.h */,
+				BB5BBF4F19401DC900DF95E6 /* TestViewCell.m */,
+				BB5BBF46193FFFE800DF95E6 /* JZXKVideoSearchViewController.h */,
+				BB5BBF47193FFFE800DF95E6 /* JZXKVideoSearchViewController.m */,
+			);
+			name = JZXKVideoSearchViewController;
+			sourceTree = "<group>";
+		};
+		BB5BBF511940D71700DF95E6 /* OLD */ = {
+			isa = PBXGroup;
+			children = (
+				BB5BBF2B193EF80000DF95E6 /* BNRVideoPlayerViewController.h */,
+				BB5BBF2C193EF80000DF95E6 /* BNRVideoPlayerViewController.m */,
+				BB5BBF2E193EF81200DF95E6 /* BNRVideoPlayerViewController.xib */,
+				BB5BBF3F193FC92100DF95E6 /* OLD_ JZXKMainVideoAdvertView */,
+				BB5BBF3E193FC91700DF95E6 /* OLD_JZXKVideoPlayerView */,
+				BB5BBF49194010AE00DF95E6 /* JZXKVideoSearchResultTableViewCell.h */,
+				BB5BBF4A194010AE00DF95E6 /* JZXKVideoSearchResultTableViewCell.m */,
+			);
+			name = OLD;
+			sourceTree = "<group>";
+		};
+		BB5BBF561940E78A00DF95E6 /* Load Video URL Screen */ = {
+			isa = PBXGroup;
+			children = (
+				BB5BBF521940D76400DF95E6 /* JZXKRecordingLoadViewController.xib */,
+				BB5BBF581940E7B900DF95E6 /* JZXKRecordingLoadViewController.h */,
+				BB5BBF591940E7B900DF95E6 /* JZXKRecordingLoadViewController.m */,
+			);
+			name = "Load Video URL Screen";
+			sourceTree = "<group>";
+		};
+		BB5BBF571940E79D00DF95E6 /* Recording */ = {
+			isa = PBXGroup;
+			children = (
+				BB5BBF601940EB8E00DF95E6 /* Record Video Screen */,
+				BB5BBF561940E78A00DF95E6 /* Load Video URL Screen */,
+			);
+			name = Recording;
+			sourceTree = "<group>";
+		};
+		BB5BBF601940EB8E00DF95E6 /* Record Video Screen */ = {
+			isa = PBXGroup;
+			children = (
+				BB5BBF541940DBCC00DF95E6 /* JZXKRecordingCamViewController.xib */,
+				BB5BBF611940EBA000DF95E6 /* JZXKRecordingCamViewController.h */,
+				BB5BBF621940EBA000DF95E6 /* JZXKRecordingCamViewController.m */,
+			);
+			name = "Record Video Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +363,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB5BBF2F193EF81200DF95E6 /* BNRVideoPlayerViewController.xib in Resources */,
+				BB5BBF44193FD5CF00DF95E6 /* chrisbrown webcam .jpg in Resources */,
 				BB5BBF07193EF7D600DF95E6 /* InfoPlist.strings in Resources */,
+				BB5BBF4D19401AD000DF95E6 /* TestViewCell.xib in Resources */,
+				BB5BBF42193FCC0900DF95E6 /* profilepic.jpg in Resources */,
+				BB5BBF32193F9C7400DF95E6 /* response.jpg in Resources */,
+				BB5BBF33193F9C7400DF95E6 /* video.jpg in Resources */,
+				BB5BBF38193FA52200DF95E6 /* JZXKMainVideoAdvertView.xib in Resources */,
+				BB5BBF531940D76400DF95E6 /* JZXKRecordingLoadViewController.xib in Resources */,
+				BB5BBF551940DBCC00DF95E6 /* JZXKRecordingCamViewController.xib in Resources */,
 				BB5BBF0F193EF7D600DF95E6 /* Images.xcassets in Resources */,
+				BB5BBF3A193FB27600DF95E6 /* JZXKVideoPlayerView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,8 +393,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB5BBF36193FA4FA00DF95E6 /* JZXKMainVideoAdvertView.m in Sources */,
+				BB5BBF2D193EF80000DF95E6 /* BNRVideoPlayerViewController.m in Sources */,
+				BB5BBF5A1940E7B900DF95E6 /* JZXKRecordingLoadViewController.m in Sources */,
 				BB5BBF09193EF7D600DF95E6 /* main.m in Sources */,
+				BB5BBF4B194010AE00DF95E6 /* JZXKVideoSearchResultTableViewCell.m in Sources */,
+				BB5BBF5019401DC900DF95E6 /* TestViewCell.m in Sources */,
+				BB5BBF631940EBA000DF95E6 /* JZXKRecordingCamViewController.m in Sources */,
+				BB5BBFA61946510400DF95E6 /* JZXKVidblit.m in Sources */,
 				BB5BBF0D193EF7D600DF95E6 /* BNRAppDelegate.m in Sources */,
+				BB5BBF3D193FC90000DF95E6 /* JZXKVideoPlayerView.m in Sources */,
+				BB5BBF48193FFFE800DF95E6 /* JZXKVideoSearchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

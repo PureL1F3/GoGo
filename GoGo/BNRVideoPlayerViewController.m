@@ -7,8 +7,11 @@
 //
 
 #import "BNRVideoPlayerViewController.h"
-
+#import "JZXKMainVideoAdvertView.h"
+#import "JZXKVideoPlayerView.h"
 @interface BNRVideoPlayerViewController ()
+@property (strong, nonatomic) IBOutlet UIView *innerView;
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end
 
@@ -27,6 +30,25 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+//    for(int i = 0; i <5; i++)
+//    {
+//        UINib *nib = [UINib nibWithNibName:@"JZXKMainVideoAdvertView" bundle:nil];
+//        JZXKMainVideoAdvertView *view = [[nib instantiateWithOwner:self options:nil] objectAtIndex:0];
+//        
+//        [self.scrollView addSubview:view];
+//        float topPad = 50;
+//        float x = view.frame.origin.x;
+//        float y = i * view.frame.size.height + topPad;
+//        float w = view.frame.size.width;
+//        float h = view.frame.size.height + topPad;
+//        [view setFrame:CGRectMake(x, y, w, h)];
+//        
+//    }
+//    self.scrollView.contentSize = self.innerView.bounds.size;
+    
+    UINib *nib = [UINib nibWithNibName:@"JZXKVideoPlayerView" bundle:nil];
+    JZXKVideoPlayerView *view = [[nib instantiateWithOwner:self options:nil] objectAtIndex:0];
+    [self.scrollView addSubview:view];
 }
 
 - (void)didReceiveMemoryWarning

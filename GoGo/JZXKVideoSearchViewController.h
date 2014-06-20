@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JZXKVideoPlayerView.h"
 
-@interface JZXKVideoSearchViewController : NSObject
+@interface JZXKVideoSearchViewController : UITableViewController
+{
+    int nRows;
+}
 
 @end
